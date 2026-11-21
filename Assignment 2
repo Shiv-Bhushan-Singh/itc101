@@ -1,0 +1,26 @@
+What is Utf 8 ?
+Ans: UTF-8 (8-bit Unicode Transformation Format) is a variable-width character encoding standard capable of encoding all 149,000+ characters defined in the Unicode standard, 
+including international scripts, mathematical symbols, and emojis. It is the dominant character encoding on the World Wide Web, used by over 98% of websites.
+
+Pros and cons of CSV and xlsx
+Ans: CSV (Comma-Separated Values) stores tabular data in plain text, separating fields with commas or other delimiters.
+XLSX (Excel Open XML Spreadsheet) is a compressed, XML-based binary container format used by Microsoft Excel to store formatted, multi-sheet workbooks.
+*CSV*
+Pros: Lightweight; lightning-fast to generate and process in data pipelines; works natively with version control (Git diffs); universally readable by all tools.
+Cons: No support for text formatting, colors, or cell formulas; lacks native data-type enforcement (everything is raw text); fields containing commas require quotation escaping; cannot store multiple tabs.
+*XLSX*
+Pros: Supports rich cell styling, formulas, charts, macros, and conditional formatting; stores multiple sheets in a single file; preserves precise data types (e.g., dates vs. strings).
+Cons: Heavy memory and CPU footprint for large datasets; git cannot track cell-level changes (diffs appear as modified binary blobs); vulnerable to file corruption if modified by third-party tools.
+
+Learn about Encoding
+Ans: Character Set (Repertoire): A master catalog of characters mapped to numeric values called Code Points. 
+For example, in the Unicode standard, the letter 'A' is code point U+0041 (decimal 65), and '€' is U+20AC.
+Encoding Scheme: The rule set that determines how code point numbers are converted into byte sequences on disk or in memory.
+Some of the encoding standards are:-
+ASCII (7-bit): Developed in the 1960s; supports 128 characters (English alphabet, numbers, basic punctuation).
+ISO-8859-1 / Latin-1 (8-bit): Extends ASCII to 256 characters to include Western European accented letters.
+UTF-8 (8-bit variable): The modern global standard. Efficient for English, universal for all languages and emojis.
+UTF-16 (16-bit variable): Uses 2 or 4 bytes per character; widely used internally by Windows OS, Java runtime, and JavaScript engine memory models.
+
+Create an account on 'Hugging face'
+Ans: https://huggingface.co/annesad
